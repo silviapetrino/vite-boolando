@@ -1,7 +1,17 @@
 
 <script>
+import headerMenu from "../data/headerMenu";
+import socialIcons from "../data/socialicons";
+
 export default {
- name: "header"
+ name: "header",
+
+ data(){
+  return {
+    headerMenu,
+    socialIcons
+  }
+ }
 }
 
 </script>
@@ -13,9 +23,7 @@ export default {
     <div class="container display-flex">
       <nav>
         <ul>
-          <li><a href="">Donna</a></li>
-          <li><a href="">Uomo</a></li>
-          <li><a href="">Bambini</a></li>
+          <li v-for="(item, index) in headerMenu" :key="`header-${index}`"><a :href="item.href">{{ item.text }}</a></li>
         </ul>
       </nav>
       <div id="logo">
@@ -23,21 +31,12 @@ export default {
       </div>
       <nav>
         <ul>
-          <li>
-            <a href="">
-              <i class="fa-regular fa-user"></i>
+          <li v-for="(icon, index) in socialIcons.headerSocial" :key="`socialHeader-${index}`">
+            <a :href="icon.href">
+              <i :class="icon.class"></i>
             </a>
           </li>
-          <li>
-            <a href="">
-              <i class="fa-regular fa-heart"></i>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <i class="fa-solid fa-bag-shopping"></i>
-            </a>
-          </li>
+         
         </ul>
       </nav>
     </div>

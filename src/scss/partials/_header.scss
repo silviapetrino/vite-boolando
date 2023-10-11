@@ -16,11 +16,14 @@ header#topbar {
     ul {
       li {
         display: inline;
-        a {
+        a { 
           color: white;
           font-weight: 600;
           font-size: 13px;
           padding-left: 5px;
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }

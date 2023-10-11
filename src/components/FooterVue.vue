@@ -1,8 +1,16 @@
 
 
 <script>
+import socialicons from '../data/socialicons';
+
 export default {
-    name: "footer"
+    name: "footer",
+
+    data() {
+      return {
+        socialicons
+      }
+    }
 }
 
 </script>
@@ -24,22 +32,11 @@ export default {
         <span>Trovaci anche su</span>
         <nav>
           <ul>
-          <li>
-            <a href=""><i class="fa-brands fa-square-twitter"></i>
+          <li v-for="(icon, index) in socialicons.footerSocial">
+            <a :href="icon.href"><i :class="icon.class"></i>
             </a>
           </li>
-          <li>
-            <a href=""><i class="fa-brands fa-square-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
-          </li>
-          <li>
-            <a href=""><i class="fa-brands fa-square-pinterest"></i></a>
-          </li>
-          <li>
-            <a href=""><i class="fa-brands fa-square-youtube"></i></a></li>
+         
         </ul>
       </nav>
       </div>
@@ -50,7 +47,7 @@ export default {
   </footer>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 
 
 @use '../scss/partials/footer.scss'
