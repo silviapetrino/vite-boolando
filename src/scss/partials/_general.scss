@@ -18,14 +18,11 @@ body {
   max-width: 1200px;
 }
 
-
-main {
-  .container {
+.container-main {
     flex-wrap: wrap;
-    padding: 90px 0px 30px 0;
     justify-content: flex-start;
-  }
 }
+
 
 header .container,
 footer .container {

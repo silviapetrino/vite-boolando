@@ -17,18 +17,20 @@ export default {
 
 <template>
 
+<div class="container">
+    <div class="container-main display-flex">
 
-<div class="container display-flex">
+        <Card />
 
-    <Card />
 
+    </div>
 </div>
+
   
 
 </template>
 
-<style lang="scss" scoped>
-
+<style lang="scss" >
 
 
 </style>

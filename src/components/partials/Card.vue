@@ -8,8 +8,6 @@ export default {
 <template>
 
   
-
-
 <div class="card">
     <img src="../../../public/img/1.webp" alt="uomo">
 
