@@ -1,5 +1,4 @@
 
-
 <script>
 import socialicons from '../data/socialicons';
 
@@ -32,7 +31,7 @@ export default {
         <span>Trovaci anche su</span>
         <nav>
           <ul>
-          <li v-for="(icon, index) in socialicons.footerSocial">
+          <li v-for="(icon, index) in socialicons.footerSocial" :key="`footerIcon${index}`">
             <a :href="icon.href"><i :class="icon.class"></i>
             </a>
           </li>
