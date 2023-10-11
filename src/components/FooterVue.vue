@@ -11,6 +11,9 @@ export default {
     <h1>footer</h1>
 </template>
 
-<style>
+<style lang="scss" scoped>
+
+
+@use '../scss/partials/footer.scss'
 
 </style>

@@ -10,6 +10,8 @@ export default {
     <h1>main</h1>
 </template>
 
-<style>
+<style lang="scss" scoped>
+
+@use '../scss/partials/middle.scss'
 
 </style>
