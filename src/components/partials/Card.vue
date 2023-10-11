@@ -48,24 +48,24 @@ export default {
   width: calc(100% / 3 - 10px);
   min-width: 250px;
   position: relative;
+
+  &:hover {
+    img.first {
+      display: none;
+    }
+    img.second {
+      display: block;
+    }
+  }
  
-
-
   img {
     width: 100%;
     object-fit: cover;
     z-index: 0;
   }
 
-  img.first:hover {
-    display: none;
-  }
-
   img.second {
     display: none;
-    &:hover {
-      display: block;
-    }
   }
 
   .product-details {
