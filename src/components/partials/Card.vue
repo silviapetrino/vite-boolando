@@ -21,18 +21,17 @@ export default {
   <span class="heart">&hearts;</span>
   <div class="marks">
     <span class="range-discount"> {{ item.discount }}</span>
-    <span class="value">Sostenibilità</span>
+    <span v-if="item.sostenibilita" class="value">Sostenibilità</span>
   </div>
 
-<div class="product-details">
-    <span class="brand">{{ item.marca }}</span>
-    <h4 class="product-name">{{ item.modello }}</h4>
-    <span class="price">{{ item.lastPrice }}</span>
-    <span class="discount">{{ item.fullPrice }}</span>
-</div>
+  <div class="product-details">
+      <span class="brand">{{ item.marca }}</span>
+      <h4 class="product-name">{{ item.modello }}</h4>
+      <span class="price">{{ item.lastPrice }}</span>
+      <span class="discount">{{ item.fullPrice }}</span>
+  </div>
     
 </div>
-
 
 
   
