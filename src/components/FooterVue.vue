@@ -1,13 +1,15 @@
 
 <script>
 import socialicons from '../data/socialicons';
+import footerMenu from '../data/footerMenu';
 
 export default {
     name: "footer",
 
     data() {
       return {
-        socialicons
+        socialicons,
+        footerMenu
       }
     }
 }
@@ -21,9 +23,7 @@ export default {
         <h5><a href="">Booleando s.r.l</a></h5>
         <nav>
           <ul>
-          <li><a href="">Informazioni legali</a></li>
-          <li><a href="">Informativa di privacy</a></li>
-          <li><a href="">Diritto di recesso</a></li>
+          <li v-for="(item, index) in footerMenu" :key="`footMenu${index}`"><a :href="item.href">{{ item.title }}</a></li>
         </ul>
       </nav>
       </div>
