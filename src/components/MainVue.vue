@@ -1,11 +1,11 @@
 <script>
-import Card from './partials/Cards.vue';
+import Cards from './partials/Cards.vue';
 import cards from '../data/partials/cards';
 
 export default {
     name: "main",
     components: {
-        Card
+        Cards
     },
 
     data() {
@@ -21,7 +21,7 @@ export default {
 
     <div class="container-main display-flex">
 
-      <Card />
+      <Cards />
 
 
     </div>
