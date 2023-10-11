@@ -19,7 +19,7 @@ export default {
 
 <div class="container">
 
-    <div class="container-main display-flex" :key="`card${index}`">
+    <div class="container-main display-flex">
 
       <Card />
 

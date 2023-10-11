@@ -1,4 +1,3 @@
-
 <script>
 import cardList from '../../data/partials/card';
 
