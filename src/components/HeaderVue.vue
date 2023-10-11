@@ -10,6 +10,8 @@ export default {
   <h1>header</h1>
 </template>
 
-<style>
+<style lang="scss" scoped>
+
+
 
 </style>

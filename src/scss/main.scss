@@ -1,9 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import './partials/variables';
+@import './partials/general';
+@import './partials/header';
+@import './partials/middle';
+@import './partials/footer';
 
-body {
-  font-family: 'Roboto', sans-serif;
-}
+
