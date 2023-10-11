@@ -1,5 +1,6 @@
 export default [
   {
+    gender: 'man',
     primaryImage: '1.webp',
     secondaryImage: '1b.webp',
     discount: '-50%',
@@ -10,6 +11,7 @@ export default [
     lastPrice: 14.99
   },
   {
+    gender: 'woman',
     primaryImage: '2.webp',
     secondaryImage: '2b.webp',
     discount: '-30%',
@@ -20,6 +22,7 @@ export default [
     lastPrice: 20.99
   },
   {
+    gender: 'woman',
     primaryImage: '3.webp',
     secondaryImage: '3b.webp',
     discount: '-30%',
@@ -30,6 +33,7 @@ export default [
     lastPrice: 129.99
   },
   {
+    gender: 'man',
     primaryImage: '4.webp',
     secondaryImage: '4b.webp',
     discount: '-50%',
@@ -40,6 +44,7 @@ export default [
     lastPrice: 29.99
   },
   {
+    gender: 'woman',
     primaryImage: '5.webp',
     secondaryImage: '5b.webp',
     discount: '-50%',
@@ -50,6 +55,7 @@ export default [
     lastPrice: 99.99
   },
   {
+    gender: 'woman',
     primaryImage: '6.webp',
     secondaryImage: '6b.webp',
     discount: null,

@@ -18,12 +18,14 @@ export default {
 <template>
 
 <div class="container">
-    <div class="container-main display-flex">
 
-        <Card />
+    <div class="container-main display-flex" :key="`card${index}`">
+
+      <Card />
 
 
     </div>
+
 </div>
 
   

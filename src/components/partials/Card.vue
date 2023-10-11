@@ -1,29 +1,40 @@
 
 <script>
+import cardList from '../../data/partials/card';
+
 export default {
-  name: "card"
+  name: "card",
+  data(){
+    return {
+      cardList
+    }
+  }
 }
 </script>
 
 <template>
 
-  
-<div class="card">
-    <img src="../../../public/img/1.webp" alt="uomo">
+<div class="card" v-for="(item, index) in cardList" :key="`card-${index}`">
 
-    <span class="heart">&hearts;</span>
-    <div class="marks">
-        <span class="range-discount">-50%</span>
-        <span class="value">Sostenibilità</span>
-    </div>
+  <img class="first" :src="`../../../public/img/${item.primaryImage}`" :alt="item.gender">
+  <img class="second" :src="`../../../public/img/${item.secondaryImage}`" :alt="item.gender">
 
-    <div class="product-details">
-        <span class="brand">Levi's</span>
-        <h4 class="product-name">RELAXED FIT TEE UNISEX</h4>
-        <span class="price">14,99&euro</span>
-        <span class="discount">29,99&euro</span>
-    </div>
+  <span class="heart">&hearts;</span>
+  <div class="marks">
+    <span class="range-discount"> {{ item.discount }}</span>
+    <span class="value">Sostenibilità</span>
+  </div>
+
+<div class="product-details">
+    <span class="brand">{{ item.marca }}</span>
+    <h4 class="product-name">{{ item.modello }}</h4>
+    <span class="price">{{ item.lastPrice }}</span>
+    <span class="discount">{{ item.fullPrice }}</span>
 </div>
+    
+</div>
+
+
 
   
 </template>
@@ -33,17 +44,30 @@ export default {
 <style lang="scss" scoped>
 
 .card {
+  cursor: pointer;
   background-color: white;
   margin: 5px;
   width: calc(100% / 3 - 10px);
   min-width: 250px;
   position: relative;
-  cursor: pointer;
+ 
+
 
   img {
     width: 100%;
     object-fit: cover;
     z-index: 0;
+  }
+
+  img.first:hover {
+    display: none;
+  }
+
+  img.second {
+    display: none;
+    &:hover {
+      display: block;
+    }
   }
 
   .product-details {
