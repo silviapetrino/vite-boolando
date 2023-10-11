@@ -1,6 +1,6 @@
 <script>
-import Card from './partials/Card.vue';
-import cards from '../data/partials/card';
+import Card from './partials/Cards.vue';
+import cards from '../data/partials/cards';
 
 export default {
     name: "main",

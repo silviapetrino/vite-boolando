@@ -1,5 +1,5 @@
 <script>
-import cardList from '../../data/partials/card';
+import cardList from '../../data/partials/cards';
 
 export default {
   name: "card",
