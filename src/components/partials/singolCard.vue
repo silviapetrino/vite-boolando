@@ -8,7 +8,7 @@
     }
   
   }
-  
+
 </script>
 
 <template>
@@ -20,7 +20,7 @@
 
   <span class="heart">&hearts;</span>
   <div class="marks">
-    <span class="range-discount"> {{ singolCard.discount }}</span>
+    <span v-if="singolCard.discount" class="range-discount"> {{ singolCard.discount }}</span>
     <span v-if="singolCard.sostenibilita" class="value">Sostenibilità</span>
   </div>
 
